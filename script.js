@@ -18,7 +18,7 @@ function rot13(encodedStr){
 		var eword = words(i);
 		var dword = " ";
 		for(var j = 0; j < eword.length() ; j++){
-			dword += lookup(eword(i));
+			dword += lookup(eword(j));
 		}
 		decodedArr.push(dword);
 	}
