@@ -22,7 +22,7 @@ function rot13(encodedStr){
 		}
 		decodedArr.push(dword);
 	}
-  return decodedArr ;//return decodedArr
+  return decodedArr.join();//return decodedArr
 }
 
 // You can test your code by running the above function and
