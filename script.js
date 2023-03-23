@@ -14,10 +14,10 @@ function rot13(encodedStr){
    let decodedArr = []; // Your Result goes here
   // Only change code below this line
 	var words = encodedStr.split(" ");
-	for(var i = 0; i < words.length(); i++){
+	for(var i = 0; i < words.length; i++){
 		var eword = words(i);
 		var dword = " ";
-		for(var j = 0; j < eword.length() ; j++){
+		for(var j = 0; j < eword.length ; j++){
 			dword += lookup(eword(j));
 		}
 		decodedArr.push(dword);
