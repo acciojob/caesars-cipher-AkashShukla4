@@ -15,10 +15,10 @@ function rot13(encodedStr){
   // Only change code below this line
 	const words = encodedStr.split(" ");
 	for(let i = 0; i < words.length; i++){
-		const eword = words(i);
+		const eword = words[i];
 		let dword = " ";
 		for(let j = 0; j < eword.length ; j++){
-			dword += lookup[eword(j)];
+			dword += lookup[eword[i]];
 		}
 		decodedArr.push(dword);
 	}
