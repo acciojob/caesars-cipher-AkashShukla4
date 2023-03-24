@@ -18,7 +18,8 @@ function rot13(encodedStr){
 		const eword = words[i];
 		let dword = " ";
 		for(let j = 0; j < eword.length ; j++){
-			dword += lookup[eword[i]];
+			const char = eword[j];
+			dword += lookup[char];
 		}
 		decodedArr.push(dword);
 	}
