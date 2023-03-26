@@ -13,17 +13,18 @@ const lookup = {
 function rot13(encodedStr){
    let decodedArr = []; // Your Result goes here
   // Only change code below this line
-	const words = encodedStr.split(" ");
+	var words = encodedStr.split(" ");
 	for(let i = 0; i < words.length; i++){
-		const eword = words[i];
-		let dword = " ";
+		var eword = words[i];
+		var dword = " ";
 		for(let j = 0; j < eword.length ; j++){
 			const char = eword[j];
 			dword += lookup[char];
 		}
 		decodedArr.push(dword);
+		decodedArr.join(" ");
 	}
-  return decodedArr.join(" ");//return decodedArr
+  return decodedArr; //return decodedArr
 }
 
 // You can test your code by running the above function and
